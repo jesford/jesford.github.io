@@ -87,7 +87,10 @@ ul {
     background: url("./Profile_JesFord.jpg") no-repeat;
     background-size: 300px auto;
 }
-
+#aboutmepic {
+    background: url("./Profile_wToki.jpg") no-repeat;
+    background-size: 320px auto;
+}
 
 /***** LINKS ******/
 a {
