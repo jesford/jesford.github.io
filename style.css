@@ -99,21 +99,12 @@ ul {
     background: url("./girl_wLens.jpg") no-repeat;
     background-size: 400px auto;
 }
-
-/***** LINKS ******/
-a {
-    color: darkcyan;
-    text-decoration: none;
-}
-.ingreen {
-    color: #F0F0F0;
-}
-a:hover {
-    color: #383838;
+#none {
+    background: none;
 }
 
 
-/***** BACKGROUND COLORS ******/
+/***** BACKGROUND COLORS & IMAGES ******/
 .ingray {
     color: #F0F0F0; /* light gray text */
 }
@@ -139,4 +130,21 @@ a:hover {
 }
 #paleorange {
     background-color: #FFC266;
+}
+#turnagainpass {
+    background: url("./turnagainpass.jpg") no-repeat;
+    background-size: 100%;
+}
+
+
+/***** LINKS ******/
+a {
+    color: darkcyan;
+    text-decoration: none;
+}
+.ingreen {
+    color: #F0F0F0;
+}
+a:hover {
+    color: #383838;
 }
