@@ -91,6 +91,10 @@ ul {
     background: url("./Profile_wToki.jpg") no-repeat;
     background-size: 320px auto;
 }
+#telescopepic{
+    background: url("./cfht_and_me.jpg") no-repeat;
+    background-size: 300px auto;
+}   
 #outreachpic {
     background: url("./girl_wLens.jpg") no-repeat;
     background-size: 400px auto;
