@@ -135,7 +135,10 @@ ul {
     background: url("./turnagainpass.jpg") no-repeat;
     background-size: 100%;
 }
-
+#tokiatlions {
+    background: url("./toki_lions.jpg") no-repeat;
+    background-size: 100%;
+}
 
 /***** LINKS ******/
 a {
