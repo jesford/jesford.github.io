@@ -14,18 +14,20 @@ body {
 #footer{
     position:fixed;
     width: 100%;
-    height: 4%;
+    /*height: 4%;*/
+    height: 30px;
     background-color: #383838;
     bottom: 0;
     padding-left: 10%;
-    padding-top: 0.5%;
+    padding-top: 5px;
     /*margin-top: 95%;
     padding-top: 2%;*/ 
 }
 #header{
     position:fixed;
     width: 100%;
-    height: 15%;
+    height: 100px;
+    /*height: 15%;*/
     background-color: #383838;
     /*margin-top: 2%;
     margin-left: 0px;
@@ -49,8 +51,15 @@ li{
     margin-bottom: 5%;
 }
 .sitechunk {
-    height: 100%; /* fills available window */
-    padding: 5%;
+    /*height: 65%; /* fills available window */
+    height:450px;
+    /*padding: 5%;*/
+    padding: 50px;
+}
+.firstsitechunk {
+    height:470px; /* fills available window */
+    padding: 50px;
+    padding-top: 135px;
 }
 .sitechunkphoto {
     height: 600px; /* want height of photo... */
@@ -96,7 +105,7 @@ p {
     padding-top: 2%;
 }
 .firstp {
-    padding-top: 0%;
+    padding-top: 100px;
 }
 .menu {
     font-size: 2.em;
@@ -135,6 +144,7 @@ ul {
 #profilepic {
     background: url("./Profile_JesFord.jpg") no-repeat;
     background-size: 300px auto;
+    margin-top: 5%;
 }
 #aboutmepic {
     background: url("./Profile_wToki.jpg") no-repeat;
@@ -201,4 +211,19 @@ a {
 }
 a:hover {
     color: #383838;
+}
+#researchlink:hover {
+    color: darkcyan;
+}
+#clusterlink:hover {
+    color: #33AD75;
+}
+#snowlink:hover {
+    color: lightblue;
+}
+#cvlink:hover{
+    color: #FFFFA3;
+}
+#aboutlink:hover{
+    color: lightpink;
 }
