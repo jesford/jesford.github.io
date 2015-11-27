@@ -240,8 +240,11 @@ a:hover {
 #snowlink:hover {
     color: lightblue;
 }
-#cvlink:hover{
+#outreachlink:hover {
     color: #FFFFA3;
+}
+#cvlink:hover{
+    color: lightblue;
 }
 #aboutlink:hover{
     color: lightpink;
