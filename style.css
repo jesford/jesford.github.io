@@ -87,9 +87,6 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 }
-#papers p {
-    font-size: 1.5em;
-}
 
 /***** HEADERS ******/
 h1 {
@@ -116,16 +113,22 @@ h4 {
     font-family: 'Slackey', sans-serif;
     margin-bottom: 5%;
 }
+#sbsubsection {
+    font-family: 'Slackey', sans-serif;
+    font-size: 1.6em;
+    padding-top: 80px;
+}
 .lightgray {
     color: #F0F0F0;
 }
 #research{
     font-family: 'Times';
+    font-size: 2.3em;
 }
 .researchhdr{
     font-family: 'Times';
     padding-top: 50px;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 /***** PARAGRAPHS ******/
 p {
