@@ -81,6 +81,15 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+#papers {
+    /*padding-top: 80px;
+    padding-bottom: 20px;*/
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#papers p {
+    font-size: 1.5em;
+}
 
 /***** HEADERS ******/
 h1 {
@@ -110,7 +119,14 @@ h4 {
 .lightgray {
     color: #F0F0F0;
 }
-
+#research{
+    font-family: 'Times';
+}
+.researchhdr{
+    font-family: 'Times';
+    padding-top: 50px;
+    font-size: 1.5em;
+}
 /***** PARAGRAPHS ******/
 p {
     color: #383838;
