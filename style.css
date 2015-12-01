@@ -88,6 +88,11 @@ body {
     padding-right: 5%;
 }
 
+#leftside {
+    padding-right: 50%;
+}
+
+
 /***** HEADERS ******/
 h1 {
     color: #33AD75; /*greenyellow;*/
