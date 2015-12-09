@@ -188,20 +188,20 @@ ol li{
     margin-right: 5%;
 }
 #profilepic {
-    background: url("./Profile_JesFord.jpg") no-repeat;
+    background: url("./photos/Profile_JesFord.jpg") no-repeat;
     background-size: 300px auto;
     margin-top: 5%;
 }
 #aboutmepic {
-    background: url("./Profile_wToki.jpg") no-repeat;
+    background: url("./photos/Profile_wToki.jpg") no-repeat;
     background-size: 320px auto;
 }
 #telescopepic{
-    background: url("./cfht_and_me.jpg") no-repeat;
+    background: url("./photos/cfht_and_me.jpg") no-repeat;
     background-size: 300px auto;
 }   
 #outreachpic {
-    background: url("./girl_wLens.jpg") no-repeat;
+    background: url("./photos/girl_wLens.jpg") no-repeat;
     background-size: 400px auto;
 }
 #none {
@@ -237,11 +237,11 @@ ol li{
     background-color: #FFC266;
 }
 #turnagainpass {
-    background: url("./turnagainpass.jpg") no-repeat;
+    background: url("./photos/turnagainpass.jpg") no-repeat;
     background-size: 100%;
 }
 #tokiatlions {
-    background: url("./toki_lions.jpg") no-repeat;
+    background: url("./photos/toki_lions.jpg") no-repeat;
     background-size: 100%;
     /*height: 100%;*/
     /*size: 100%;*/
