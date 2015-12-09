@@ -72,6 +72,13 @@ body {
 .centeredlink p {
     text-align: center;
 }
+.lefttoplink p {
+    float: left;
+}
+.righttoplink p {
+    float: right;
+    margin-right: 30px;
+}
 #floor {
     bottom: 0;
 }
@@ -128,7 +135,7 @@ h4 {
 }
 #research{
     font-family: 'Times';
-    font-size: 2.3em;
+    font-size: 2.7em;
 }
 .researchhdr{
     font-family: 'Times';
