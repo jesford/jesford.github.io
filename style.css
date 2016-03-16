@@ -218,8 +218,8 @@ ol li{
     background-size: 300px auto;
 }   
 #outreachpic {
-    background: url("./photos/girl_wLens.jpg") no-repeat;
-    background-size: 400px auto;
+    background: url("./photos/girl_wLens_zoom.jpg") no-repeat;
+    background-size: 350px auto;
 }
 #none {
     background: none;
