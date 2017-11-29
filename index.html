@@ -1,98 +1,435 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
   <title>Jes Ford</title>
-  <link type="text/css" rel="stylesheet" href="style.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'/>
-  <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'/>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Squadfree
+    Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+
 </head>
-<!--------------------->
-<body>
 
-<!--------------------->
-<div id="header"><h1>Jes Ford, PhD</h1><h4 class="ingray">Data Science
-  Postdoc</h4></div>
-<!--------------------->
-  
-
-<div class="firstsitechunk" id="darkcyan">
-  <div class="icon" id="profilepic"> </div>
-  <div><p class="firstp">I am a Moore/Sloan Data Science and WRF
-  Innovation in Data Science Postdoctoral Fellow in
-  the eScience Institute at the University of Washington. My work
-  focuses on using machine learning and other statistical techniques to
-  characterize galaxy clusters in large astronomical surveys.</p></div>
-</div>
-
-<!----  
-<div class="sitechunk" id="darkcyan">
-  <h2 class="hdr">Science & Research</h2>
-  <div class="icon"> </div>
-  <p>Some words in a paragraph.</p>  
-</div>
---------->
-
-<div class="sitechunk" id="nicegreen">
-  <h2 class="hdr">Science & Research</h2>
-<div class="icon" id="telescopepic"> </div>
-
-  <p>I work primarily in the field of cosmology - the study of the
-  universe as a whole - with a focus on galaxy clusters and
-  gravitational lensing. I recently joined the <a
-  href="http://escience.washington.edu/" class="ingreen">eScience
-  Institute</a>, where I am applying data
-  science techniques like machine learning, to
-  problems in my field. See my <a href="research.html"
-class="ingreen">research</a> page for more details.</p>
-
-  <p>I publicly released the CFHTLenS Cluster Catalog, containing over 18,000 cluster
-  candidates, available <a href="clusters.html" class="ingreen">here</a>.</p>
-
-<p>I am the author of the <a
-href="http://jesford.github.io/cluster-lensing/intro.html"
-class="ingreen">cluster-lensing</a> Python package for calculating galaxy cluster
-  profiles and properties. Checkout my projects on <a
-href="https://github.com/jesford" class="ingreen">GitHub</a>.</p>
-
-</div>
-
-
-<div class="sitechunk" id="paleyellow">
-  <h2 class="hdr">Public Outreach & Education</h2>
-  <div class="icon" id="outreachpic"> </div>
-  <p>I love talking to kids about space! (and the science of sports,
-  and music, and particles...). I've led many different educational
-  demonstrations and activities for ages ranging from elementary
-  through high school and university. I've begun documenting the
-  activities - please feel free to use and share these <a
-  href="outreach.html">resources</a>! </p>
-</div>
-
-<div class="sitechunkphoto" id="tokiatlions"> 
-  <h2 class="hdr">About Me</h2>
-  <div id="leftside">
-  <p>In addition to my academic and outreach pursuits, I am an avid
-  snowboarder, and enjoy all sorts of adventures in the outdoors. To
-  learn more about Jes-the-person, please see <a href="aboutme.html"
-    class="ingreen">About Me</a>.</p>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
   </div>
-</div>
 
-<!----  
-<div class="sitechunkphoto" id="turnagainpass">
-  <h2 class="hdr">Snowboarding</h2>
-  <div class="icon" id="none"> </div>
-  <p>I like snowboarding. <a href="">A lot</a>. </p>
-</div>
---------->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>Jes Ford</h1>
+        </a>
+      </div>
 
-<div id="footer"><a href="research.html" class="menu" id="researchlink">Research</a>
-  <a href="clusters.html" class="menu"  id="clusterlink">Cluster Catalogs</a>
-  <a href="cv_jesford.pdf" class="menu" id="cvlink">CV</a>
-  <a href="aboutme.html" class="menu" id="aboutlink">About Me</a>
-  <a href="outreach.html" class="menu" id="outreachlink">Outreach</a>
-  <!---- <a href="snowboarding.html" class="menu" id="snowlink">Snowboarding</a></div>--------->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="aboutme.html">My Previous Lives</a></li>
+              <li><a href="research.html">Academic Research</a></li>
+              <li><a href="outreach.html">Outreach and Teaching</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
 
-<hr>
+  <!-- Section: intro -->
+  <section id="intro" class="intro">
 
-</body> </html>
+    <div class="slogan">
+      <h2>Jes <span class="text_color">Ford</span> </h2>
+      <h4>DATA SCIENTIST & PHD</h4>
+    </div>
+    <div class="page-scroll">
+      <a href="#service" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+    </div>
+  </section>
+  <!-- /Section: intro-->
+
+  <!-- Section: about-->
+  <section id="about" class="home-section text-center">
+
+    <div class="heading-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>About Me</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-2">
+          <div class="wow bounceInUp" data-wow-delay="0.2s">
+            <div> <!-- class="team boxed-grey">-->
+              <div class="inner">
+                <!--<h5>Jes Ford</h5>
+                <p class="subtitle">Data Scientist</p>-->
+                <div class="avatar"><img src="img/team/profile.jpg" alt="" class="img-responsive img-circle" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div> <!-- class="col-md-3">-->
+          <div class="wow bounceInUp" data-wow-delay="1s">
+            <!--<div class="my-text-box">  class="team boxed-gray">-->
+              <div class="my-text-box" align="left">
+                <p>I am a data scientist specializing in Python, machine learning, experimental design, practical statistics and problem solving. I enjoy writing clean robust code with thorough documentation, exploring new methods and technologies, and teaching others the tools to work more efficiently. My full resume is available <a href="Resume_JesFord.pdf">here</a>.</p> 
+                <p>I am passionate about the scientific method, life-long learning, women in technology, protecting our environment, and snowboarding as much as possible. In past lives I was a PhD astrophysicist and a sponsored competitive snowboarder.
+                </p>
+                <p><i>Current Position:</i> Data Scientist at Backcountry.com </p>
+              </div>
+            <!--</div>-->
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- /Section: about -->
+
+  
+    </div>
+  </section><!-- #call-to-action -->
+
+  <!-- Section: services -->
+  <section id="service" class="home-section text-center bg-gray">
+
+    <div class="heading-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>My Toolkit</h2>
+                <p>I am experienced with a number of languages and tools, but my everyday bread and butter is Python and its ecosystem of data-related libraries. In addition to those called out below, I regularly make use of numpy, matplotlib, seaborn, and many others. See my <a href="Resume_JesFord.pdf">resume</a> for a more complete list of skills and projects.</p>
+                <i class="fa fa-2x fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/python-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>Python</h5>-->
+                <p>Over 5 years professional experience coding and designing software in Python. I am co-organizer of the Salt Lake PyLadies and absolutely love the Python community!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/jupyter-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>Jupyter Notebook</h5>-->
+                <p>Jupyter Notebook is a killer interactive environment for exploratory analyses, prototyping future production software, and joyfully teaching and sharing code with others.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="wow fadeInRight" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/pandas-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>Pandas</h5>-->
+                <p>Probably the only library that I import in every single Python session, Pandas is my go-to for getting started exploring a new dataset and coercing it into useful forms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/sklearn-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>Scikit-Learn</h5>-->
+                <p>I reach for this awesome Machine Learning package when faced with problems requiring modeling, predictive analytics, or a deep dive into unsupervised data exploration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="wow fadeInRight" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/bash-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>bash</h5>-->
+                <p>Love the command line! I've been working in various shells on Unix systems for 10+ years, creating shell scripts and automating jobs with cron.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="wow fadeInRight" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/github-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>GitHub</h5>-->
+                <p>Evangelist for open source software (and data), from academia to industry. I share everything I can on GitHub, including this very website.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="wow fadeInRight" data-wow-delay="0.2s">
+            <div class="service-box">
+              <div class="service-icon">
+                <img src="img/icons/git-icon.png" alt="" />
+              </div>
+              <div class="service-desc">
+                <!--<h5>Git</h5>-->
+                <p>Controlling the versions one commit at a time. I teach Git and GitHub to anyone who will listen, including Software Carpentry students.</p>
+              </div>
+            </div>
+          </div>
+       </div>
+
+       <div class="col-md-3">
+         <div class="wow fadeInRight" data-wow-delay="0.2s">
+           <div class="service-box">
+             <div class="service-icon">
+               <img src="img/icons/database-icon.png" alt="" />
+             </div>
+             <div class="service-desc">
+              <!--<h5>SQL</h5>-->
+              <p>Skilled in writing complex SQL queries for adhoc requests and large scale projects, and in maintaining automated custom tables in relational databases.</p>
+             </div>
+           </div>
+         </div>
+       </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /Section: services -->
+
+
+
+
+  <!-- Section: contact -->
+  <section id="contact" class="home-section text-center">
+    <div class="heading-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>Get in touch</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="boxed-grey">
+
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form id="contact-form" action="" method="post" role="form" class="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                                Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                                Email Address</label>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">
+                                Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                                Message</label>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                            Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="widget-contact">
+            <!-- <h5>Main Office</h5>-->
+
+            <address>
+				  <strong>Jes Ford, PhD</strong><br>
+				  Salt Lake City, UT<br>
+          <!--San Francisco, CA 94107<br>
+				  <abbr title="Phone">P:</abbr> (206) 446-6874-->
+				</address>
+
+            <address>
+				  <strong>Email</strong><br>
+				  <a href="mailto:#">jesfordphd@gmail.com</a>
+				</address>
+            <address>
+				  <strong>On the internet</strong><br>
+                       	<ul class="company-social">
+                            <li class="social-github"><a href="https://github.com/jesford/" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-linkedin"><a href="https://www.linkedin.com/in/jesford/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <!--<li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>-->
+                        </ul>
+				</address>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- /Section: contact -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="wow shake" data-wow-delay="0.4s">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+            </div>
+          </div>
+          <p>Modified from a template created by &copy;SquadFREE. All rights reserved.</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact. 
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+            -->
+            <a href="https://bootstrapmade.com/bootstrap-one-page-templates/">Bootstrap One Page Templates</a> by BootstrapMade
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>

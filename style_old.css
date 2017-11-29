@@ -1,0 +1,317 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*width: 100%;*/
+    /*display: block;*/
+    /*margin: 0;
+    height: 100%;
+    padding: 0px; 
+    overflow-x: hidden;*/
+}
+#footer{
+    position:fixed;
+    width: 100%;
+    /*height: 4%;*/
+    height: 30px;
+    background-color: #383838;
+    bottom: 0;
+    padding-left: 10%;
+    padding-top: 5px;
+    /*margin-top: 95%;
+    padding-top: 2%;*/ 
+}
+#header{
+    position:fixed;
+    width: 100%;
+    height: 100px;
+    /*height: 15%;*/
+    background-color: #383838;
+    /*margin-top: 2%;
+    margin-left: 0px;
+    top: 10px;
+    border-radius: 5px;*/
+    top: 0;
+    padding: 10px;
+    /*padding: 10px;
+    margin: 0px;
+    margin-bottom: 0%;*/
+    font-family: 'Slackey', sans-serif;
+}
+
+/*li{
+    margin: -20px;
+}*/
+
+/***** DIV CLASSES******/
+.page {
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.sitechunk {
+    /*height: 65%; /* fills available window */
+    height:450px;
+    /*padding: 5%;*/
+    padding: 50px;
+}
+.firstsitechunk {
+    height:470px; /* fills available window */
+    padding: 50px;
+    padding-top: 135px;
+}
+.sitechunkphoto {
+    height: 600px; /* want height of photo... */
+    padding: 5%;
+}
+.centeredlink {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.centeredlink p {
+    text-align: center;
+}
+.lefttoplink p {
+    float: left;
+}
+.righttoplink p {
+    float: right;
+    margin-right: 30px;
+}
+#floor {
+    clear: both;
+    bottom: 0;
+}
+#activities {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#papers {
+    /*padding-top: 80px;
+    padding-bottom: 20px;*/
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#leftside {
+    padding-right: 50%;
+}
+
+#youtube {
+    padding: 40px;
+}
+
+/***** HEADERS ******/
+h1 {
+    color: #33AD75; /*greenyellow;*/
+    font-size: 3.3em;
+    text-align: center;
+}
+h2 {
+    color: #383838;
+    font-size: 2.2em;
+    text-align: center;
+}
+h3 {
+    color: #383838;
+    font-size: 2.1em;
+    text-align: left;
+}
+h4 {
+    color: #383838;
+    font-size: 2.em;
+    text-align: center;
+}
+.hdr {
+    font-family: 'Slackey', sans-serif;
+    margin-bottom: 5%;
+}
+#sbsubsection {
+    font-family: 'Slackey', sans-serif;
+    font-size: 1.6em;
+    padding-top: 80px;
+}
+.lightgray {
+    color: #F0F0F0;
+}
+#research{
+    font-family: 'Times';
+    font-size: 2.7em;
+}
+.researchhdr{
+    font-family: 'Times';
+    padding-top: 50px;
+    font-size: 1.6em;
+}
+/***** PARAGRAPHS ******/
+p {
+    color: #383838;
+    font-family: 'Times';
+    font-size: 1.5em;
+    padding-top: 2%;
+}
+.researchp {
+    font-size: 1.3em;
+}
+.firstp {
+    padding-top: 100px;
+}
+.menu {
+    font-size: 2.em;
+    padding: 3%;
+    /*margin-top: 3%;*/
+    font-family: 'Slackey', sans-serif;
+    color: #F0F0F0;
+}
+ul {
+    color: #383838;
+    font-family: 'Times';
+    font-size: 1.5em;
+    /*margin-top: 0;
+    margin-left: 1em;*/
+}
+ul li {
+    padding-top: 0.8em;
+    /*padding-bottom: 0.8em;*/
+}
+
+ol{
+    padding-left: 10%;
+}
+ol li{
+    padding-top: 0.8em;
+}
+.smallfont {
+    font-size: 1.0em;
+}
+.shiftright {
+    margin-left: 40px;
+}
+
+/***** CIRCULAR IMAGES ******/
+.icon {
+    float: left;
+    background-color: white;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(https://placekitten.com/g/350/350) no-repeat;
+    margin-right: 5%;
+}
+#profilepic {
+    background: url("./photos/Profile_JesFord.jpg") no-repeat;
+    background-size: 300px auto;
+    margin-top: 5%;
+}
+#aboutmepic {
+    background: url("./photos/Profile_wToki.jpg") no-repeat;
+    background-size: 320px auto;
+}
+#telescopepic{
+    background: url("./photos/cfht_and_me.jpg") no-repeat;
+    background-size: 300px auto;
+}   
+#outreachpic {
+    background: url("./photos/girl_wLens_zoom.jpg") no-repeat;
+    background-size: 350px auto;
+}
+#none {
+    background: none;
+}
+
+
+/***** BACKGROUND COLORS & IMAGES ******/
+.ingray {
+    color: #F0F0F0; /* light gray text */
+}
+#darkgray {
+    background-color: #383838;
+}
+#darkcyan {
+    background-color: darkcyan;
+}
+#greenblue {
+    /*darkcyan mixed with mediumseagreen*/
+    background-color: #1B9D7F;
+}
+#nicegreen {
+    /*mediumseagreen mixed with darkcyan*/
+    background-color: #33AD75;
+}
+#paleyellow {
+    background-color: #FFFFA3;
+}
+#lightgray {
+    background-color: #F0F0F0;
+}
+#paleorange {
+    background-color: #FFC266;
+}
+#turnagainpass {
+    background: url("./photos/turnagainpass.jpg") no-repeat;
+    background-size: 100%;
+}
+#tokiatlions {
+    background: url("./photos/toki_lions.jpg") no-repeat;
+    background-size: 100%;
+    /*height: 100%;*/
+    /*size: 100%;*/
+}
+
+/***** SNOWBOARD PHOTOS ******/
+
+.sbphoto {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+#short {
+    height: 200px;
+}
+
+.outreachphoto {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    height: 200px;
+}
+
+iframe {
+    margin: 10px;
+}
+
+/***** LINKS ******/
+a {
+    color: darkcyan;
+    text-decoration: none;
+}
+.ingreen {
+    color: #F0F0F0;
+}
+a:hover {
+    color: #383838;
+}
+#researchlink:hover {
+    color: darkcyan;
+}
+#clusterlink:hover {
+    color: #33AD75;
+}
+#snowlink:hover {
+    color: lightblue;
+}
+#outreachlink:hover {
+    color: #FFFFA3;
+}
+#cvlink:hover{
+    color: lightblue;
+}
+#aboutlink:hover{
+    color: lightpink;
+}
